@@ -35,7 +35,7 @@ namespace GazeTrainerApp
         private static readonly bool AutoCenterBoundryBox = false;
 
         /*****************************
-        Punishement Settings
+        Punishment Settings
             Defines when punishment is started due to the user looking outside the boundry box
         *****************************/
         // How long does the user need to look outside the boundry box for the punishment SFX start?
