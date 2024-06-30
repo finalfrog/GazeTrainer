@@ -6,7 +6,7 @@ using Tobii.StreamEngine;
 using System.Threading.Tasks;
 
 
-namespace GazeTrainerApp
+namespace GazeTrainer
 {
     public static class GazeTrainer
     {
@@ -24,11 +24,11 @@ namespace GazeTrainerApp
             Defines the area of your screen where it is safe to look
         *****************************/
         // The the distance from the left of your display to the left side of the boundry box
-        private static float BoundryBoxX = 1277;
+        private static float BoundryBoxX = 0;
         // The the distance from the top of your display to the top of the boundry box
         private static float BoundryBoxY = 0;
         // The width of the boundry box
-        private static readonly float BoundryBoxWidth = 1288;
+        private static readonly float BoundryBoxWidth = 3840;
         // The height of the boundry box
         private static readonly float BoundryBoxHeight = 2160;
         // If true ignores specified X and Y and places boundry box with specified height and width in the center of the display
@@ -58,7 +58,7 @@ namespace GazeTrainerApp
         // Should program continue running?
         static bool _continue = true;
         // The sound file to play when punishing the user
-        static readonly SoundPlayer punishmentFilePlayer = new SoundPlayer(GazeTraining.Properties.Resources.punish_loop_wav);
+        static readonly SoundPlayer punishmentFilePlayer = new SoundPlayer(Properties.Resources.punish_loop_wav);
         // Timestamp when the gaze point was last polled
         private static DateTime LastPollTime;
         // Is the punishment sound playing?
